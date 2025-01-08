@@ -53,7 +53,7 @@ kotlin {
     }
     
     sourceSets {
-        val desktopMain by getting
+        val desktopMain by getting 
         
         androidMain.dependencies {
             implementation(compose.preview)
@@ -68,6 +68,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)

@@ -1,5 +1,6 @@
 package org.example.project
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,7 +12,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            LoginScreen()
+            LoginScreen(navigateToGameScreen = {
+                // Implement navigation to game screen for Android
+                val intent = Intent(this@MainActivity, GameActivity::class.java)
+                startActivity(intent)
+            })
         }
     }
 }
@@ -19,5 +24,5 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun AppAndroidPreview() {
-    LoginScreen()
+    LoginScreen(navigateToGameScreen = {})
 }
