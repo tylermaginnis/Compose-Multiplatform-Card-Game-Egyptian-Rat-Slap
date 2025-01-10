@@ -81,7 +81,7 @@ fun LoginScreen(
                     verticalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
                     Text(
-                        text = "Egyptian Rat Screw",
+                        text = "Egyptian Rat Slap",
                         style = MaterialTheme.typography.h4,
                         textAlign = TextAlign.Center
                     )

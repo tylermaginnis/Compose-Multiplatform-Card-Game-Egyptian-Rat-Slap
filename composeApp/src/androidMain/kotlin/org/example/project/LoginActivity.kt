@@ -15,12 +15,10 @@ class LoginActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            // ... existing code ...
             LoginScreen(navigateToGameScreen = {
                 // Navigate to the game screen
                 startActivity(Intent(this@LoginActivity, GameActivity::class.java))
             })
-            // ... existing code ...
         }
     }
 }
