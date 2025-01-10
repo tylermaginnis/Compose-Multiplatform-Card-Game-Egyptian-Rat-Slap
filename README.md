@@ -2,12 +2,15 @@
 
 This is a Kotlin Multiplatform project targeting Android, iOS, Web, and Desktop platforms. It utilizes Compose Multiplatform for shared UI components across all targets.
 
+![wasmJsMain, Android and Desktop targets running simultaneously](docImages/1.png)
+
 ## Project Structure
 
 - `/composeApp`: Shared code for Compose Multiplatform applications
   - `commonMain`: Code common to all targets
   - Platform-specific folders (e.g., `androidMain`, `iosMain`, `wasmJsMain`, `desktopMain`): Code compiled for specific platforms
 - `/iosApp`: iOS-specific code and entry point
+
 
 ## Functionality
 
