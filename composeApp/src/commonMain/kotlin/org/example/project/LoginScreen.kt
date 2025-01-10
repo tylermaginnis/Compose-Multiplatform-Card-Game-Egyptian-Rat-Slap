@@ -90,14 +90,11 @@ fun LoginScreen(
                         style = MaterialTheme.typography.subtitle1,
                         textAlign = TextAlign.Center
                     )
-                    Button(onClick = { /* Handle Sign Up */ }) {
-                        Text("Sign Up")
-                    }
                     Button(onClick = {
                         showLogin = false
                         navigateToGameScreen()
                     }) {
-                        Text("Play as Guest")
+                        Text("Play versus Computer")
                     }
                 }
             }
